@@ -453,7 +453,8 @@
     agents: '<circle cx="6" cy="7" r="2.3"/><circle cx="18" cy="17" r="2.3"/><path d="M8 8.6l8 6.8"/><circle cx="6" cy="17" r="1.8" opacity="0.55"/><circle cx="18" cy="7" r="1.8" opacity="0.55"/>',
     shield: '<path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/>',
     network: '<circle cx="12" cy="5" r="2"/><circle cx="5" cy="18" r="2"/><circle cx="19" cy="18" r="2"/><line x1="12" y1="7" x2="6.3" y2="16.3"/><line x1="12" y1="7" x2="17.7" y2="16.3"/><line x1="7" y1="18" x2="17" y2="18"/>',
-    doc: '<path d="M6 3h9l3 3v15H6V3z"/><path d="M15 3v3h3"/><path d="M9 13l2 2 4-4"/>'
+    doc: '<path d="M6 3h9l3 3v15H6V3z"/><path d="M15 3v3h3"/><path d="M9 13l2 2 4-4"/>',
+    flag: '<path d="M5 3v18"/><path d="M5 4.5h12l-2.2 4.2L17 13H5"/>'
   };
 
   const DEMOS = [
@@ -480,6 +481,10 @@
     { id:'insurance-fraud-investigations', repo:'Insurance-fraud-investigations',
       title:'Insurance Fraud Investigations', tag:'Insurance', tagClass:'teal', icon:'doc',
       desc:'Flags inconsistent claims and patterns of staged or exaggerated losses.',
+      enabled:true },
+    { id:'sanctions-redline', repo:'sanctions-redline',
+      title:'Sanctions Redline', tag:'Sanctions', tagClass:'gold', icon:'flag',
+      desc:'Generates adversarial name variations against the watchlist to stress-test rules, then builds new rules for the weak spots it finds.',
       enabled:true },
   ];
 
