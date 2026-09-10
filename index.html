@@ -455,7 +455,9 @@
     network: '<circle cx="12" cy="5" r="2"/><circle cx="5" cy="18" r="2"/><circle cx="19" cy="18" r="2"/><line x1="12" y1="7" x2="6.3" y2="16.3"/><line x1="12" y1="7" x2="17.7" y2="16.3"/><line x1="7" y1="18" x2="17" y2="18"/>',
     doc: '<path d="M6 3h9l3 3v15H6V3z"/><path d="M15 3v3h3"/><path d="M9 13l2 2 4-4"/>',
     flag: '<path d="M5 3v18"/><path d="M5 4.5h12l-2.2 4.2L17 13H5"/>',
-    tune: '<line x1="4" y1="6" x2="20" y2="6"/><circle cx="9" cy="6" r="2"/><line x1="4" y1="12" x2="20" y2="12"/><circle cx="15" cy="12" r="2"/><line x1="4" y1="18" x2="20" y2="18"/><circle cx="9" cy="18" r="2"/>'
+    tune: '<line x1="4" y1="6" x2="20" y2="6"/><circle cx="9" cy="6" r="2"/><line x1="4" y1="12" x2="20" y2="12"/><circle cx="15" cy="12" r="2"/><line x1="4" y1="18" x2="20" y2="18"/><circle cx="9" cy="18" r="2"/>',
+    eye: '<path d="M2 12s3.5-6.5 10-6.5S22 12 22 12s-3.5 6.5-10 6.5S2 12 2 12z"/><circle cx="12" cy="12" r="2.6"/>',
+    store: '<path d="M4 4h16l1.5 5H2.5L4 4z"/><path d="M4 9v11h16V9"/><path d="M9.5 20v-6h5v6"/>'
   };
 
   const DEMOS = [
@@ -490,6 +492,14 @@
     { id:'sentinel-rule-scan', repo:'Sentinel-Rule-Scan',
       title:'Sentinel Rule Scan', tag:'Explainability', tagClass:'teal', icon:'tune',
       desc:'Uses a patented explainability engine and agentic AI to read investigator notes, pinpoint why fraud rules misclassified cases, and tune the weak ones.',
+      enabled:true },
+    { id:'internal-fraud-monocle', repo:'internal-fraud',
+      title:'Monocle', tag:'Internal Fraud', tagClass:'rose', icon:'eye',
+      desc:'Keeps watch for employee and internal fraud, surfacing suspicious behavior from within the organization.',
+      enabled:true },
+    { id:'point-of-compromise', repo:'point-of-compromise',
+      title:'Point of Compromise', tag:'Merchant Fraud', tagClass:'gold', icon:'store',
+      desc:'Identifies compromised merchants by tracing shared points of purchase across clusters of fraudulent transactions.',
       enabled:true },
   ];
 
